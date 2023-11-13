@@ -2,17 +2,6 @@
 
 (cl:in-package cl-user)
 
-
-(defpackage "https://github.com/g000001/srfi-236"
-  (:use)
-  (:export
-   independently))
-
-
-(defpackage "https://github.com/g000001/srfi-236#internals"
-  (:use "CL"
-        "ALEXANDRIA"
-        "BORDEAUX-THREADS"
-        "https://github.com/g000001/srfi-236"))
-
-;;; *EOF*
+(defpackage #:srfi-236
+  (:use :cl :alexandria :bordeaux-threads-2)
+  (:export independently))
